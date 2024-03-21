@@ -10,6 +10,7 @@ namespace HelloWorld //패키지
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World 안녕 세상아!");
         }
     }
 }
