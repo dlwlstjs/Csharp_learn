@@ -10,27 +10,9 @@ namespace HelloWorld //패키지
     {
         static void Main(string[] args)
         {
-            //문자열에서 공백을 잘라내기 Trim
-            string greeting = "      Hello World!       ";
-            Console.WriteLine($"[{greeting}]");
-
-            string trimmedGreeting = greeting.TrimStart();
-            Console.WriteLine($"[{trimmedGreeting}]");
-
-            trimmedGreeting = greeting.TrimEnd();
-            Console.WriteLine($"[{trimmedGreeting}]");
-
-            trimmedGreeting = greeting.Trim();
-            Console.WriteLine($"[{trimmedGreeting}]");
-
-            //Replace
-            string sayHello = "Hello World!";
-            Console.WriteLine(sayHello);
-            sayHello = sayHello.Replace("Hello", "Greetings");
-            Console.WriteLine(sayHello);
-
-            Console.WriteLine(sayHello.ToUpper());
-            Console.WriteLine(sayHello.ToLower());
+            string songLyrics = "You say goodbye, and I say hello";
+            Console.WriteLine(songLyrics.Contains("goodbye"));
+            Console.WriteLine(songLyrics.Contains("greetings"));
         }
     }
 }
