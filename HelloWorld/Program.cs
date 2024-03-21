@@ -10,15 +10,12 @@ namespace HelloWorld //패키지
     {
         static void Main(string[] args)
         {
-            string aFriend = "Bill";
-            Console.WriteLine(aFriend);
+            string firstFriend = "Maria";
+            string secondFriend = "Sage";
+            Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
 
-            aFriend = "Maira";
-            Console.WriteLine(aFriend);
-
-            Console.WriteLine("Hello " + aFriend);
-
-            Console.WriteLine($"Hello {aFriend}");
+            Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
+            Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
         }
     }
 }
