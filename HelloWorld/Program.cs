@@ -10,12 +10,20 @@ namespace HelloWorld //패키지
     {
         static void Main(string[] args)
         {
-            string firstFriend = "Maria";
-            string secondFriend = "Sage";
-            Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+            //문자열에서 공백을 잘라내기 Trim
+            string greeting = "      Hello World!       ";
+            Console.WriteLine($"[{greeting}]");
 
-            Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
-            Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
+            string trimmedGreeting = greeting.TrimStart();
+            Console.WriteLine($"[{trimmedGreeting}]");
+
+            trimmedGreeting = greeting.TrimEnd();
+            Console.WriteLine($"[{trimmedGreeting}]");
+
+            trimmedGreeting = greeting.Trim();
+            Console.WriteLine($"[{trimmedGreeting}]");
+
+
         }
     }
 }
